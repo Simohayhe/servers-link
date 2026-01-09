@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "servers-link",
+	"version": "${version}",
+	"name": "Servers Link",
+	"description": "Link multiple servers together and synchronize players list, chat, inventory...",
+	"authors": [
+		"KGriffon"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/servers-link",
+		"sources": "https://github.com/kgriff0n/servers-link"
+	},
+	"license": "MIT",
+	"icon": "assets/servers-link/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.kgriff0n.ServersLink"
+		]
+	},
+	"mixins": [
+		"servers-link.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": ">=1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
